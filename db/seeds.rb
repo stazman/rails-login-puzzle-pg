@@ -6,5 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-le = Login.create(usr: "username", pword: "password")
-ce = Command.create(command_entry: "command")
+le = Login.create(usr: "puzzle user", pword: "puzzle pass")
+ce = Command.create(command_entry: "command pass")
