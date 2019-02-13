@@ -1,0 +1,9 @@
+
+         when @usr_entry == "puzzle user" || @pword_entry != "puzzle pass"
+          @login_entry.delete
+          flash[:alert] = "PASSWORD INCORRECT"
+          redirect_to "/"
+        when @usr_entry != "puzzle user" && @pword_entry == "puzzle pass"
+          @login_entry.delete
+          flash[:alert] = "USERNAME INCORRECT"
+          redirect_to "/"

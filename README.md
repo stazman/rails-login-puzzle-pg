@@ -1,1 +1,1 @@
-# rails-login-puzzle-pg
+# rails-puzzle-pg

@@ -1,0 +1,64 @@
+Index page
+
+<%
+=begin%>
+ <!doctype html>
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <div id="whole" class="container">
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div id="top"  class="center-block">
+          <div>
+            <p>YOUR PROJECT</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert">
+      AUTHORIZED ACCESS ONLY
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div id="middle"  class="center-block">
+          <div>
+            
+          </div>
+            <%= form_for :login_entry do |f| %> 
+              <strong>
+                <%= f.label "Username" %>
+              </strong>
+                <%= f.text_field :usr %>
+                <br><br>
+              <strong>
+                <%= f.label "Password" %>
+              </strong>
+                <%= f.text_field :pword %>
+                <br><br>
+                <%= f.submit "Submit" %>
+                <% end %>
+            </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="bottom"  class="center-block">
+              <img src="images/blind-data.jpg">
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html> 
+<%
+=end%>
