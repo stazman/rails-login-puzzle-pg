@@ -3,7 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # gem 'paperclip'
 
-ruby '>= 2.3.5', '< 2.6'
+ruby '2.3.3'
+# ruby '>= 2.3.5', '< 2.6'
+# gem 'ruby', '2.5.3'
 
 # gem 'sqlite3', group: :development
 gem "aws-sdk-s3", require: false
@@ -12,9 +14,8 @@ gem 'mini_magick', '~> 4.8'
 
 gem 'pg', '0.18.1'
 
-# gem 'ruby', '2.5.3'
+# gem 'bundler', '1.17.3'
 
-gem 'bundler', '1.17.3'
 # gem 'bundler', '2.0.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
